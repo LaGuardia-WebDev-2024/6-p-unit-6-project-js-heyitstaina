@@ -11,10 +11,10 @@ void draw(){
   strokeWeight(1);
 
   //💡⬇️⬇️⬇️💡 Your Code For This Project Goes Here
-  
-
-  
-
+  rect(44, 30, 350, 350)
+  ellipse(222,222,332, 232)
+  ellipse(222,222,292, 192)
+  triangle(222, 212, 192, 322, 133, 330)
 }
 
 //🟡Extra FUN Features Ms. Hall Added
