@@ -1,16 +1,16 @@
 <!-- Unit 6 Project
 Requirements
-[  ] three different shapes
-[  ] three different RGB colors
-[  ] three comments 
-[  ] three new HTML elements 
+[Yes] three different shapes
+[Yes] three different RGB colors
+[Yes] three comments 
+[Yes] three new HTML elements 
 
 Select ONE Additional 
 [ no ] Feature 1 - three different strokeWeight() commands
 [ no ] Feature 2 - Add a second <canvas>
 [ no ] Feature 3 - Change Tab Title & Image
 [ no ] Feature 4 - Typewriter Animation
-[ no ] Feature 5 - Gradient Background
+[Yes] Feature 5 - Gradient Background
 -->
 
 <!DOCTYPE html>
@@ -18,10 +18,35 @@ Select ONE Additional
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Unit 6 Project</title>
+    <title>Pizza</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
-    <style></style>
+    <style>
+      .info {
+        background: rgb(219, 235, 255);
+        width: 100%;
+        height: 180px;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        #official-info {
+          background-color: rgb(213, 204, 224);
+          border-radius: 10px;
+          width: 50%;
+        }
+      }
+      .first-sentence {
+        color: red;
+        font-style: italic;
+      }
+
+       body {
+        background-image:linear-gradient(to bottom right, 	#FECDFF , 	#E44C4C, #c5b9cd, #E47A4C, 	#92a8d1);
+
+      }
+
+      }
+    </style>
   </head>
 
   <body>
@@ -29,13 +54,41 @@ Select ONE Additional
       <div>
         <h2 id="start">How it started.</h2>
         <img
-          class="pic" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/Chill_guy_original_artwork.jpg/220px-Chill_guy_original_artwork.jpg"
+          class="pic"
+          src="https://www.allrecipes.com/thmb/D73VvwH_cG06pVzh05oitTocYV8=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/48727-Mikes-homemade-pizza-DDMFS-beauty-4x3-BG-2974-a7a9842c14e34ca699f3b7d7143256cf.jpg"
         />
       </div>
       <div>
         <h2 id="end">How it ended.</h2>
         <canvas id="myCanvas" data-processing-sources="myP5Code.pde"> </canvas>
       </div>
+    </div>
+    <img
+      id="show"
+      class="pic"
+      src="https://i.pinimg.com/736x/b6/7e/32/b67e32f24300c11d1e4fb57aea17ccf1.jpg"
+      alt="Photo of the show"
+    />
+
+    <div class="info">
+      <p>
+        <strong>Pizza</strong>
+      </p>
+      <p>is a great food!</p>
+      <p>Eat it with any topping you want</p>
+      <p>or no toppings at all</p>
+      <p>we wont judge</p>
+      <p>Wait Time for a slice: 3 minutes</p>
+      <p>Pizza price: $1 per slice</p>
+
+      <a href="https://littlecaesars.com/en-us/">Read more on our website</a>
+    </div>
+
+    <div id="official-info">
+      <p>
+        <span class="first-sentence"> At Pizza Pizza we wont judge</span>
+        just sit back relax and have a slice!
+      </p>
     </div>
   </body>
 </html>
