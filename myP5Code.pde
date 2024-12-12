@@ -13,14 +13,14 @@ void draw(){
   //💡⬇️⬇️⬇️💡 Your Code For This Project Goes Here
  
 //table
- fill(#453e29);
+ fill(69, 62, 41);
  rect(5, 8, 750, 950);
  fill(132, 118, 77);
  rect(44, 30, 350, 350);
  line(3, 2, 50, 25)
 
 //shadow
- fill (#453e29);
+ fill (69, 62, 41);
  ellipse(222,242,332, 232);
 
 
